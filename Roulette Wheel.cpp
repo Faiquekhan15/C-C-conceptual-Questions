@@ -8,16 +8,16 @@ int main()
 {
 	char M;
 	char BET;
-    int BET_AMOUNT=5;
-    int MoneyRemaining=100;
-    int ZERO_WIN_AMOUNT=50;
-    int NumberofWins=0;
-    int NumberofLosses=0;
+    	int BET_AMOUNT=5;
+    	int MoneyRemaining=100;
+    	int ZERO_WIN_AMOUNT=50;
+    	int NumberofWins=0;
+    	int NumberofLosses=0;
 	int WheelNumber=0;
 	time_t t;
 	srand((unsigned)time(&t));
 	ofstream fout;
-    string filename;
+    	string filename;
 	cout<<"Enter your name i.e lastname_firstname_roulette.extension"<<endl;
 	cin>>filename;
 	fout.open(filename.c_str());
