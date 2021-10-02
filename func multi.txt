@@ -1,0 +1,67 @@
+#include<iostream>
+using namespace std;
+int const col=16;
+int const row =16;
+void printarray(int a[row][col],int row,int col)
+{
+	for(int i=0;i<row;i++)
+	{
+	   for(int j=0;j<col;j++)
+	   {
+		   cout<<a[i][j]<<"\t";
+	   }
+	   cout<<endl;
+	}
+
+}
+void multiplicationtarr(int x[row][col],int y[row][col],int z[row][col],int row,int col)
+{
+	for(int i=0;i<row;i++)
+	{
+	   for(int j=0;j<col;j++)
+	   {
+		   z[i][j]=x[i][j]*y[i][j];
+		   cout<<z[i][j]<<"\t";
+	   }
+	   cout<<endl;
+	}
+}
+
+int main()
+{
+	
+	int const size=16;
+	int c[size][size];
+	int m,n;
+	int a[size][size];
+	
+	cout<<"Enter the number of rows:"<<endl;
+	cin>>m;
+	cout<<"Enter the number of col:"<<endl;
+	cin>>n;
+	cout<<"Enter elements in an Matrix1:"<<endl;
+	for(int i=0;i<m;i++)
+	{
+	   for(int j=0;j<n;j++)
+	   {
+		   cin>>a[i][j];
+	   }
+	}
+	int b[size][size];
+	cout<<"Enter elements in an Matrix2:"<<endl;
+	for(int i=0;i<m;i++)
+	{
+	   for(int j=0;j<n;j++)
+	   {
+		   cin>>b[i][j];
+	   }
+	}
+	cout<<"Output of 1 matrix:"<<endl;
+	printarray(a,m,n);
+	cout<<"Output  of 2 matrix:"<<endl;
+	printarray(b,m,n);
+	cout<<"Output multplication of  matrix:"<<endl;
+    multiplicationtarr(a,b,c,m,n);
+   system("pause");
+   return 0;
+}
