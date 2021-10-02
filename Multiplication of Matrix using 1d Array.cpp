@@ -4,8 +4,8 @@ int main()
 {
 	int const size=16;
 	int a[size];
-    int b[size];
-    int c[size];
+	int b[size];
+	int c[size];
 	int m,n;
 	cout<<"Enter number of rows"<<endl;
 	cin>>m;
@@ -24,7 +24,7 @@ int main()
 	{
 		cin>>b[j];
 	}
-    cout<<"Output of matrix"<<endl;
+        cout<<"Output of matrix"<<endl;
 	for (int i = 0; i < m; i++)
 	{
 	for (int j = 0; j <n; j++) 
@@ -38,6 +38,5 @@ int main()
 	}
 	cout<<endl;
 }
-system("pause");
 return 0;
 }
