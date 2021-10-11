@@ -13,29 +13,27 @@ void printallcomb(int n,vector<int>&comb)
 {
 	if(n==0)
 	{
-	    printarray(comb);
+		printarray(comb);
 	}
 	else
 	{
 		comb.push_back(0);
 		printallcomb(n-1,comb);
 		comb.pop_back();
-        comb.push_back(1);
+		comb.push_back(1);
 		printallcomb(n-1,comb);
 		comb.pop_back();
 	}
-
 }
 void printallcomb(int n)
 {
 	vector<int>comb;
 	printallcomb(n,comb);
 }
-
 int main()
 {
-    int n;
-    cout<<"PLEASE ENTER A NUMBER YOU WANT TO FORM A COMBINATION"<<endl;
+	int n;
+	cout<<"PLEASE ENTER A NUMBER YOU WANT TO FORM A COMBINATION"<<endl;
 	cin>>n;
 	printallcomb(n);
 }
